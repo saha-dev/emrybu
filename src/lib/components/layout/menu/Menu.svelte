@@ -94,7 +94,7 @@
 	}
 
 	.menu-panel.desktop-slide {
-		width: 350px;
+		width: 300px;
 		position: absolute;
 		/* Привязываем к левому краю контейнера. (Предполагается, что родительский элемент имеет position: relative) */
 		/*left: 0px; /* Здесь должен быть left: 0 или right: 0 в зависимости от Header.svelte */

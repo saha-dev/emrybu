@@ -1,9 +1,14 @@
 <script lang="ts">
-	import logo from '$lib/assets/logo.svg';
 	import Menu from '../menu/Menu.svelte';
 	import MenuButton from '../menu/MenuButton.svelte';
+	import ActionIcon from '../ui/ActionIcon.svelte';
+	import Logo from '$lib/components/layout/icons/Logo.svelte';
+	import Bag from '$lib/components/layout/icons/Bag.svelte';
+	import Phone from '../ui/Phone.svelte';
 
 	let isMenuOpen = $state(false);
+
+	const phone = { number: '+380634441188', title: '063-444-11-88' };
 
 	function closeMenu() {
 		isMenuOpen = false;
@@ -16,15 +21,27 @@
 
 <div class="header-block">
 	<div class="header-content">
-		<div class="left-part">
+		<div class="logo-menu">
 			<div class="header-logo">
-				<a href="/">
-					<img src={logo} alt="EMRYBU" />
-				</a>
+				<ActionIcon icon={Logo} color={'var(--main-color)'} stretch={true} href="/" />
 			</div>
 			<div class="menu-block">
 				<MenuButton {isMenuOpen} {toggleMenu} />
 				<Menu {isMenuOpen} close={closeMenu} />
+			</div>
+		</div>
+		<div class="actions-block">
+			<!-- <div class="search-block">
+				<Search isOverlay={isSearchOverlay} {toggleSearchOverlay} />
+			</div> -->
+
+			<Phone {phone} />
+			<div class="icon-block">
+				<!-- <div class="icon-loupe">
+					<ActionIcon onclick={toggleSearchOverlay} icon={Loupe} />
+				</div> -->
+				<!-- <ActionIcon href="/wishlist" iconSrc={heart} /> -->
+				<ActionIcon icon={Bag} href="/cart" />
 			</div>
 		</div>
 	</div>
@@ -52,7 +69,7 @@
 		gap: 4px;
 	}
 
-	.left-part {
+	.logo-menu {
 		display: flex;
 		align-items: center;
 	}
@@ -66,5 +83,12 @@
 		margin-left: 12px;
 		position: relative;
 		flex-shrink: 0;
+	}
+
+	.actions-block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
 	}
 </style>

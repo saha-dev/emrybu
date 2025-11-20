@@ -30,11 +30,13 @@
 		align-items: center;
 		z-index: 2;
 		transition: transform 0.3s;
+		transition: color 0.2s ease;
 		flex-shrink: 0; /* Не давать кнопке сжиматься */
 	}
 
 	.menu-button:hover {
-		opacity: 0.8;
+		/* opacity: 0.8; */
+		filter: brightness(90%);
 	}
 
 	.button-line {
