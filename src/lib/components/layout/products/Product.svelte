@@ -16,7 +16,7 @@
 		<div class="product-info">
 			<div class="product-weight">
 				<!-- <span class="icon-scale">⚖</span> -->
-				{description} г
+				{description}
 			</div>
 		</div>
 		<div class="product-price">{price} <span>₴</span></div>

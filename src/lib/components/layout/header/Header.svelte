@@ -60,7 +60,7 @@
 	}
 
 	.header-content {
-		max-width: 1366px;
+		max-width: 1024px;
 		margin: 0px auto;
 		padding: 0px 12px;
 		height: 100%;
