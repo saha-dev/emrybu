@@ -76,13 +76,13 @@
 	}
 
 	.header-logo {
-		width: 120px;
+		width: 100px;
 		height: 40px;
 		color: var(--main-color);
 	}
 
 	.menu-block {
-		margin-left: 12px;
+		margin-left: 8px;
 		position: relative;
 		flex-shrink: 0;
 	}
@@ -92,5 +92,15 @@
 		align-items: center;
 		justify-content: center;
 		gap: 12px;
+	}
+
+	@media (min-width: 380px) {
+		.header-logo {
+			width: 120px;
+		}
+
+		.menu-block {
+			margin-left: 12px;
+		}
 	}
 </style>
