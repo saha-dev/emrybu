@@ -23,7 +23,7 @@
 	<div class="header-content">
 		<div class="logo-menu">
 			<div class="header-logo">
-				<ActionIcon icon={Logo} color={'var(--main-color)'} stretch={true} href="/" />
+				<ActionIcon icon={Logo} stretch={true} href="/" />
 			</div>
 			<div class="menu-block">
 				<MenuButton {isMenuOpen} {toggleMenu} />
@@ -78,6 +78,7 @@
 	.header-logo {
 		width: 120px;
 		height: 40px;
+		color: var(--main-color);
 	}
 
 	.menu-block {

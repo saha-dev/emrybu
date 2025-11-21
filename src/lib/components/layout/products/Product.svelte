@@ -83,7 +83,8 @@
 	}
 
 	.product-price {
-		color: var(--main-color, #e24511);
+		/* color: var(--main-color, #e24511); */
+		color: var(--common-text-dark);
 		font-weight: bold;
 		text-align: right;
 		font-size: 2rem;

@@ -12,7 +12,7 @@
 <div class="category-block">
 	<div class="category-header">
 		{#if currentCategory}
-			<h1>Продукція в категорії: {currentCategory.name}</h1>
+			<h1>{currentCategory.name}</h1>
 		{:else}
 			<h1>Категорія не знайдена: {params?.slug}</h1>
 		{/if}
@@ -40,7 +40,7 @@
 
 	.category-header {
 		color: var(--common-text-dark);
-		padding-top: 16px;
+		padding: 0px 16px;
 	}
 
 	.category-container {
